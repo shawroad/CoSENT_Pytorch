@@ -14,9 +14,12 @@ def load_data(path):
         lines = f.readlines()
         for line in lines:
             line = line.strip().split('\t')
-            sentence.extend([line[1], line[2]])
-            lab = int(line[3])
-            label.extend([lab, lab])
+            try:
+                sentence.extend([line[0], line[1]])
+                lab = int(line[2])
+                label.extend([lab, lab])
+            except:
+                continue
     return sentence, label
 
 
@@ -26,9 +29,9 @@ def load_test_data(path):
         lines = f.readlines()
         for line in lines:
             line = line.strip().split('\t')
-            sent1.append(line[1])
-            sent2.append(line[2])
-            label.append(int(line[3]))
+            sent1.append(line[0])
+            sent2.append(line[1])
+            label.append(int(line[2]))
     return sent1, sent2, label
 
 
