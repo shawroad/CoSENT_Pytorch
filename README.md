@@ -18,7 +18,7 @@ parser.add_argument('--test_data', default='./data/PAWSX/PAWSX.test.data', type=
 <b>我的实验结果</b>
 | | ATEC | BQ | LCQMC | PAWSX | STS-B | Avg |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| MengZi+CoSENT | **50.5270** | **72.2789** | **78.6981** | **?** | **80.1544** | **68.19** |
+| MengZi+CoSENT | **50.5270** | **72.2789** | **78.6981** | **60.1437** | **80.1544** | **68.36042** |
 | Sentence-MengZi | ? | ? | ? | ? | ? | ? |
 
 <b>苏神的结果:</b>
