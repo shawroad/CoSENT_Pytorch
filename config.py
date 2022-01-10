@@ -19,7 +19,7 @@ def set_args():
 
     parser.add_argument('--pretrained_model_path', default='./mengzi_pretrain', type=str, help='预训练模型的路径')
     parser.add_argument('--output_dir', default='./outputs', type=str, help='模型输出')
-    parser.add_argument('--num_train_epochs', default=10, type=int, help='训练几轮')
+    parser.add_argument('--num_train_epochs', default=5, type=int, help='训练几轮')
     parser.add_argument('--train_batch_size', default=64, type=int, help='训练批次大小')
     parser.add_argument('--val_batch_size', default=32, type=int, help='验证批次大小')
     parser.add_argument('--gradient_accumulation_steps', default=1, type=int, help='梯度积累几次更新')
