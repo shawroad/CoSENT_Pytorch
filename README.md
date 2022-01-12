@@ -19,7 +19,7 @@ parser.add_argument('--test_data', default='./data/PAWSX/PAWSX.test.data', type=
 | | ATEC | BQ | LCQMC | PAWSX | STS-B | Avg |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | MengZi+CoSENT | **50.5270** | **72.2789** | **78.6981** | **60.1437** | **80.1544** | **68.36042** |
-| Sentence-MengZi | ? | ? | ? | ? | ? | ? |
+| Sentence-MengZi | ? | 70.6998 | ? | ? | ? | ? |
 
 <b>苏神的结果:</b>
 train训练、test测试：
