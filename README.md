@@ -30,4 +30,16 @@ train训练、test测试：
 | RoBERTa+CoSENT | **50.81** | **71.45** | **79.31** | **61.56** | **81.13** | **68.85** |
 | Sentence-RoBERTa | 48.29 | 69.99 | 79.22 | 44.10 | 72.42 | 62.80 |
 
+## 使用
+1. 运行CoSENT模型  
 
+```
+sh start.sh
+```
+
+2. 运行SentenceBert模型
+
+```
+首先，执行 python sentence_bert/data_helper.py  生成对应的数据
+再执行 CUDA_VISIBLE_DEVICES=0 python sentence_bert/run_sentence_bert_transformers_reg_loss.py
+```
