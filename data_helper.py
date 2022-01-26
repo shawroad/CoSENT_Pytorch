@@ -75,6 +75,9 @@ def collate_fn(batch):
     # 按batch进行padding获取当前batch中最大长度
     max_len = max([len(d['input_ids']) for d in batch])
 
+    if max_len > 512:
+        max_len = 512
+
     # 定一个全局的max_len
     # max_len = 128
 
