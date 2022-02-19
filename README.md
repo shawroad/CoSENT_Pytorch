@@ -15,6 +15,8 @@
 parser.add_argument('--train_data', default='./data/PAWSX/PAWSX.train.data', type=str, help='训练数据集')  
 parser.add_argument('--test_data', default='./data/PAWSX/PAWSX.test.data', type=str, help='测试数据集')
 
+**另外说明:** 本实验的句子编码向量是取embedding和最后一层池化后的结果。  也可以试试其他方式，如CLS, 最后一层池化等。
+
 <b>我的实验结果</b>
 | | ATEC | BQ | LCQMC | PAWSX | STS-B | Avg |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
