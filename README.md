@@ -9,13 +9,13 @@
 
 
 ## 实验结果
-实验效果来了。 预训练模型用的是孟子, 学习率2e-5,batch_size=64,等价苏神代码中的batch_size=32. 只用了训练集训练，然后在测试集上做测试。 分别训练了5个epoch，使用斯皮尔曼系数评价
+实验效果来了。 预训练模型用的是孟子(换成其他模型同样可以。如google-bert、roberta等), 学习率2e-5,batch_size=64,等价苏神代码中的batch_size=32. 只用了训练集训练，然后在测试集上做测试。 分别训练了5个epoch，使用斯皮尔曼系数评价
 
 指定不同数据集，只需在config.py文件中，修改下面两个参数:  
 parser.add_argument('--train_data', default='./data/PAWSX/PAWSX.train.data', type=str, help='训练数据集')  
 parser.add_argument('--test_data', default='./data/PAWSX/PAWSX.test.data', type=str, help='测试数据集')
 
-**另外说明:** 本实验的句子编码向量是取embedding和最后一层池化后的结果。  也可以试试其他方式，如CLS, 最后一层池化等。
+**另外说明:** 本实验的句子编码向量是取embedding和最后一层池化后的结果。  也可以试试其他方式，如CLS, 最后一层池化等。 最近做了一些实现，发现cls更好一些。
 
 <b>我的实验结果</b>
 | | ATEC | BQ | LCQMC | PAWSX | STS-B | Avg |
