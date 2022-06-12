@@ -45,3 +45,5 @@ sh start.sh
 首先，执行 python sentence_bert/data_helper.py  生成对应的数据
 再执行 CUDA_VISIBLE_DEVICES=0 python sentence_bert/run_sentence_bert_transformers_reg_loss.py
 ```
+
+## **更多句子表示学习的模型见: [链接](https://github.com/shawroad/Semantic-Textual-Similarity-Pytorch)**
