@@ -50,3 +50,8 @@ sh start.sh
 ```
 
 ## **更多句子表示学习的模型见: [链接](https://github.com/shawroad/Semantic-Textual-Similarity-Pytorch)**
+
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=shawroad/CoSENT_Pytorch&type=Date)](https://star-history.com/#shawroad/CoSENT_Pytorch&Date)
