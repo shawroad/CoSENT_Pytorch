@@ -157,7 +157,7 @@ if __name__ == '__main__':
             loss.backward()
             print("当前轮次:{}, 正在迭代:{}/{}, Loss:{:10f}".format(epoch, step, len(train_dataloader), loss))  # 在进度条前面定义一段文字
             # nn.utils.clip_grad_norm_(model.parameters(), max_norm=20, norm_type=2)
-            epoch_loss += loss
+            epoch_loss += loss.item()
 
             if (step + 1) % args.gradient_accumulation_steps == 0:
                 optimizer.step()
